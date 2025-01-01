@@ -8,15 +8,11 @@ body {
 
 /* Header de Navegación */
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #121212;
     padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
 }
 
 .nav-logo {
@@ -29,6 +25,8 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li a {
@@ -40,6 +38,29 @@ body {
 .nav-links li a:hover {
     color: #00aaff;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Botón de descargas al lado derecho */
+.descargar-cv {
+    order: -1;
+    background-color: #00ff00;
+    color: #000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.descargar-cv:hover {
+    background-color: #00cc00;
+}
+
 
 /* Header Inicio */
 header {
@@ -54,12 +75,17 @@ header {
     text-align: center;
 }
 
+.header .profile-pic{
+    cursor: pointer;
+}
+
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 5px solid #00aaff;
     margin-bottom: 1rem;
+    transition: all 0.3s;
 }
 
 /* Descripción profesional */
@@ -165,18 +191,19 @@ form input, form textarea {
 }
 
 form button {
-    width: 100%;
+    width: 50%;
     padding: 0.7rem;
-    background-color: #00ff00;
+    background-color: #35489d;
     color: #000;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    justify-content: center;
 }
-
+/*Boton de enviar informacion*/
 form button:hover {
-    background-color: #00cc00;
+    background-color: #ffffff;
 }
 
 /* Footer */
