@@ -1,0 +1,138 @@
+<!--
+    René López Medina
+    Universidad de Gunaajuato
+    31/12/2024
+-->
+
+<!--
+    En este proyeto desarrollare mi portafolio de profecional
+    enfocado a que lo puedan ver empresas interesadas a contratarme
+    y estare actualizando constantemente con futuros proyectos,
+    tambien descrivire mi perfil profecional con mi experiencia en
+    dierentes proyectos y participaciones en investigacion y proyectos escolares
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="index.css"> <!-- Aquí puedes enlazar tu CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> <!-- Librería AOS para animaciones -->
+</head>
+<body>
+    <!-- Header de Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#inicio" class="nav-logo">My Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Start</a></li>
+                <li><a href="#descripcion">About Me</a></li>
+                <li><a href="#habilidades">Skills</a></li>
+                <li><a href="#proyectos">Projects</a></li>
+                <li><a href="#contacto">Contact</a></li>
+                <li><a href="RENE-CV.pdf" download>Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header / Inicio -->
+    <header id="inicio" style="background-image: url('ruta-de-tu-fondo.jpg');">
+        <div class="header-content">
+            <img src="IMG_7941.JPEG" alt="Mi Foto" class="profile-pic">
+            <h1>Hi, I'm René</h1>
+            <p>Computer Systems Engineering student at the University of Guanajuato,
+                DICIS campus, passionate about web development, cybersecurity,
+                networking, and software development. I value creative freedom,
+                teamwork, and continuous learning, enabling me to add value to
+                every project. Recently, I contributed to developing the Beedebelopers
+                group website using React, driven by challenges in process improvement
+                and technology implementation.
+            </p>
+        </div>
+    </header>
+
+    <!-- Descripción profesional -->
+    <section id="descripcion" data-aos="fade-right">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Computer Systems Engineering student with experience in web development, 
+                cybersecurity, networking, and software development. I have worked on 
+                technological projects such as industrial software development and web 
+                solutions focused on user experience. I excel in teamwork, creativity, 
+                problem-solving, and continuous learning, applying methodologies like 
+                SCRUM and Agile.
+            </p>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+        <div class="container" data-aos="fade-up">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section id="proyectos">
+        <div class="container" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <img src="proyecto1.jpg" alt="Proyecto 1">
+                    <h3>Project 1</h3>
+                    <p>Descripción breve del proyecto 1.</p>
+                    <a href="https://github.com/tuusuario/proyecto1" target="_blank">Ver más</a>
+                </div>
+                <div class="project-item">
+                    <img src="proyecto2.jpg" alt="Proyecto 2">
+                    <h3>Project 2</h3>
+                    <p>Descripción breve del proyecto 2.</p>
+                    <a href="https://github.com/tuusuario/proyecto2" target="_blank">Ver más</a>
+                </div>
+                <!-- Agrega más proyectos según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="container" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:r.lopezmedina@ugto.mx">r.lopezmedina@ugto.mx</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rene-lopez-52966b236/" target="_blank">https://www.linkedin.com/in/rene-lopez-52966b236/</a></p>
+
+            <!-- Formulario de Contacto -->
+            <form action="https://formsubmit.co/renydeone@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="mensaje" placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 René López Medina. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
