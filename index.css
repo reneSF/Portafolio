@@ -42,25 +42,27 @@ body {
 .container {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 19rem;
+    justify-content: center;
 }
 
 /* Botón de descargas al lado derecho */
-.descargar-cv {
-    order: -1;
-    background-color: #00ff00;
-    color: #000;
-    padding: 0.5rem 1rem;
+.descarga {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #4CAF50;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10px;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    
+    cursor: pointer;
 }
 
-.descargar-cv:hover {
-    background-color: #00cc00;
+descarga li a:hover {
+    background-color: #3e8e41;
 }
-
 
 /* Header Inicio */
 header {
@@ -73,6 +75,17 @@ header {
     background-position: center;
     color: #fff;
     text-align: center;
+}
+
+header p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 50%;
 }
 
 .header .profile-pic{
@@ -213,3 +226,6 @@ footer {
     background-color: #121212;
     color: #bbb;
 }
+
+
+  
