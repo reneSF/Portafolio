@@ -166,14 +166,18 @@ header p {
 
 /* Galería de Proyectos */
 #proyectos {
+    position:relative;
+    top: 10rem;
     padding: 3rem 2rem;
     background-color: #000;
 }
 
 .project-gallery {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    list-style: none;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .project-item {
