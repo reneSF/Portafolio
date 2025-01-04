@@ -149,6 +149,8 @@ header p {
 
 .skills-list {
     display: flex;
+    position: relative;
+    right: 180px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
     text-align: center;
@@ -161,7 +163,7 @@ header p {
     background-color: #121212;
     border: 2px solid #00aaff;
     padding: 0.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /* Galería de Proyectos */
@@ -210,11 +212,16 @@ header p {
 
 /* Contacto */
 #contacto {
+    position: relative;
+    top: 200px;
     padding: 3rem 2rem;
     background-color: #121212;
 }
 
 #contacto h2 {
+    position: relative;
+    top: -180px;
+    left: 100px;
     color: #00aaff;
 }
 
