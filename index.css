@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     color: #fff;
     background-color: #000;
-    position: relative;
+    
 }
 
 /* Header de Navegación */
@@ -142,6 +142,10 @@ header p {
     left: -10rem;
     /*text-align: left*/
     text-wrap: balance; 
+    border: 2px solid #00aaff;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
 }
 
 /* Habilidades */
@@ -220,7 +224,7 @@ header p {
 /* Contacto */
 #contacto {
     position: relative;
-    top: 200px;
+    top: 300px;
     padding: 3rem 2rem;
     background-color: #121212;
 }
@@ -245,12 +249,14 @@ header p {
     color: #00aaff;
     text-decoration: none;
 }
-
+/*Trabajando en ajustes de posicionamiento de los elementos*/
 form {
-    position: relative;
-    width: 100%;
-    top: 20px;
-    right: 1100px;
+    position: absolute;
+    width: 1000px;
+    height: auto;
+
+    top: -5rem;
+    right: 0px;
     background-color: #000;
     padding: 2rem;
     border-radius: 10px;
@@ -280,11 +286,13 @@ form button {
 }
 /*Boton de enviar informacion*/
 form button:hover {
-    background-color: #ffffff;
+    background-color: #312486;
 }
 
 /* Footer */
 footer {
+    position: relative;
+    top: 20rem;
     text-align: center;
     padding: 1rem;
     background-color: #121212;
